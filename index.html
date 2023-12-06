@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aaron Ortwein</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>
+			function toggleBibtex(id) {
+				let bibtex = document.getElementById(id);
+				if (bibtex.style.display === "none") {
+					bibtex.style.display = "block";
+				} else {
+					bibtex.style.display = "none";
+				}
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						
+						<span class="image avatar48"><img src="images/aaron_photo.png" alt=""/></span>
+							
+						<div>
+							<h1 id="name">Aaron Ortwein</h1>
+							<p id="job">CSE PhD Student</p>
+							<p id="university">University of Michigan</p>
+							
+							<div id="email"><p id="email-label">Email:</p><a href="mailto:aortwein@umich.edu">aortwein[@]umich[.]edu</a></div>
+						</div>
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/aaron-ortwein-6bb51a153/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/aaron-ortwein" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="mailto:aortwein@umich.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<!-- Portfolio -->
+
+				<!-- About Me -->
+					<section id="about" class="two">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<p>
+								I am a first-year Computer Science and Engineering PhD student at the University 
+								of Michigan, where I am advised by <a href="https://ensa.fi/">Professor Roya 
+								Ensafi</a>.
+							</p>
+
+							<p>
+								My research interests lie at the intersection of systems and networking, security
+								and privacy, and Internet measurement. In particular, I focus on measuring and
+								evading Internet censorship with the goal of empowering users to achieve equal 
+								access to an increasingly fractured global Internet guarded by powerful network 
+								adversaries. I am additionally interested in geoblocking, VPN security, and malware.
+							</p>
+
+							<p>
+								I previously earned Bachelor's and Master's degrees in Computer Science and a minor
+								in <a href="https://aces.umd.edu/">Applied Cybersecurity</a> from the University of 
+								Maryland, College Park, where I worked with 
+								<a href="https://www.cs.umd.edu/~dml/">Professor Dave Levin</a>.
+							</p>
+
+							<p>Download my CV <a href="files/aaron_ortwein_2023_cv.pdf">here</a>.</p>
+
+						</div>
+					</section>
+
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Current Projects</h2>
+							</header>
+
+							<p>
+								<span style="font-weight: bold;">Internet Shutdowns: </span> Several countries are 
+								increasingly turning to an extreme yet effective form of Internet censorship in which 
+								they completely disconnect users from the global Internet for periods of time, 
+								often during political instability. Most academic research on censorship to date has 
+								focused on Internet filtering, where users have general access to the Internet with the 
+								exception of some set of blocklisted resources. I am working on a project which seeks 
+								to develop a new approach to both predicting and detecting the occurrence of Internet 
+								shutdowns, as well as a project which seeks to determine the way forward for developing
+								Internet shutdown circumvention tools.
+							</p>
+
+							<p>
+								<span style="font-weight: bold;">VPNalyzer: </span> VPNalyzer is a project which aims
+								to identify dark patterns and other security and privacy issues within the commercial
+								VPN ecosystem. I am working on a related project which seeks to reverse engineer popular 
+								VPNs in order to uncover security and privacy deficiencies.
+							</p>
+						</div>
+					</section>
+
+					<section class="four">
+						<div class="container">
+		
+							<header>
+								<h2>Publications</h2>
+							</header>
+		
+							<div class="publication">
+								<div class="resources">
+									<p class="paper"><a href="files/transit_censorship_foci23.pdf">Towards a Comprehensive Understanding of Russian Transit Censorship</a></p>
+									<button onclick="toggleBibtex('transit-censorship-bib')">Bibtex</button>
+								</div>
+								<p class="authors"><span class="me" >Aaron Ortwein</span>, Kevin Bock, and Dave Levin</p>
+								<p class="conference">Free and Open Communications on the Internet 2023 (FOCI '23)</p>
+								<pre class="bibtex" id="transit-censorship-bib" style="display: none;">
+@inproceedings{Ortwein2023a,
+	author = {Aaron Ortwein and Kevin Bock and Dave Levin},
+	title = {Towards a Comprehensive Understanding of {Russian} Transit Censorship},
+	booktitle = {Free and Open Communications on the Internet},
+	publisher = {},
+	year = {2023},
+	url = {https://www.petsymposium.org/foci/2023/foci-2023-0012.pdf},
+}
+								</pre>
+							</div>							
+						</div>
+					</section>
+			</div>
+
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
